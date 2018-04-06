@@ -61,8 +61,16 @@ body {
   background-color: #010101;
   border: 1px solid red;
   width: 100%;
-  min-height: 100vh;
   overflow-x: hidden; }
 
 * {
   box-sizing: border-box; }
+
+.home {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #010101;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid green; }
