@@ -29,6 +29,8 @@ body {
   box-sizing: border-box;
 }
 
+/* Home */
+
 .home {
   width: 100%;
   margin: 0 auto;
@@ -37,4 +39,80 @@ body {
   position: relative;
   overflow: hidden;
   border: 1px solid green
+}
+  /* -> Navigation */
+    /* -> Menu List */
+
+.nav__item {
+  position: absolute;
+}
+
+.nav__item--projects {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotateZ(90deg);
+  left: -10px;
+
+}
+
+.nav__item--contact {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotateZ(90deg);
+  right: 0;
+}
+
+.nav__item--about {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+}
+
+    /* -> Menu Link */
+
+.nav__link {
+  text-transform: uppercase;
+  color: $red;
+  font-size: 20px;
+  letter-spacing: 4px;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+  /* -> Logo */
+
+.hero__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+}
+
+.logo__border {
+  border: 2px solid $font-color;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.logo__borderInside {
+  border: 2px solid $red;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.logo {
+  background-image: url('../images/logo-białe.svg');
+  background-size: 170%;
+  background-position: center -35px;
+  width: 80px;
+  height: 80px;
 }
