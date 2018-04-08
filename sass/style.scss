@@ -126,7 +126,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   background-image: url('../images/paulina__hero.jpg');
-  background-size: contain;
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: 10% bottom;
 }
@@ -160,3 +160,66 @@ body {
   color: #7c7c7c;
   text-align: right;
 }
+
+
+/* Large devices (desktops, 992px and less than 1200px) */
+@media (max-width: 1200px) {
+
+   .hero {
+    background-size: 42%;
+  }
+
+  .heading__name {
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+  .heading__profession {
+    font-size: 35px;
+  }
+
+  .hero__heading {
+    background-size: 142%;
+    background-position: -193px -33px;
+  }
+
+  .hero__name {
+    margin-right: 10%;
+  }
+
+}
+
+/* Hover */
+@media (min-width: 992px) {
+
+  /* Home */
+
+  .nav__link:hover {
+    mask-image: linear-gradient(-75deg, rgba(0,0,0,0.6) 30%, #000 50%, rgba(0,0,0,0.6) 70%);
+    mask-size: 200%;
+    animation: shine 1.3s infinite;
+  }
+
+  .about__link:hover {
+    background-color: $bg-color;
+    border: 2px solid $red;
+    color: $red;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and less than 992) */
+@media (max-width: 992px) {
+
+}
+
+/* Small devices (landscape phones, 576px and less than 768) */
+@media (max-width: 768px) {
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+
+}
+
