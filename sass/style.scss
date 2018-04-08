@@ -17,15 +17,16 @@ html, body {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
   color: $font-color;
   background-color: $bg-color;
-  border: 1px solid red;
   width: 100%;
   overflow-x: hidden;
   font-weight: 300px;
+  max-width: 1600px;
+  max-height: 950px;
 }
 
 * {
@@ -135,7 +136,6 @@ body {
 
 .hero__name {
   margin-top: 5%;
-  border: 1px solid green;
   margin-right: 8%;
 }
 
@@ -167,6 +167,385 @@ body {
   text-align: right;
 }
 
+/* Page Transitions */
+
+  /* -> Transition Right */
+
+.moveFromRight {
+  animation: moveFromRightFade .7s ease both;
+}
+
+@keyframes moveFromRightFade {
+  from {
+    left: 100%;
+    opacity: 0.3;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.returnRight {
+  animation: returnRightFade .7s ease both;
+}
+
+@keyframes returnRightFade {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: 100%;
+    opacity: 0.3;
+  }
+}
+
+    // -> Transition Left
+
+.moveFromLeft {
+  animation: moveFromLeftFade .7s ease both;
+}
+
+@keyframes moveFromLeftFade {
+  from {
+    right: 100%;
+    opacity: 0.3;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.returnLeft {
+  animation: returnLeftFade .7s ease both;
+}
+
+@keyframes returnLeftFade {
+  from {
+    right: 0;
+    opacity: 1;
+  }
+  to {
+    right: 100%;
+    opacity: 0.3;
+  }
+}
+
+    // -> Transition Bottom
+
+.moveFromBottom {
+  animation: moveFromBottomFade .7s ease both;
+}
+
+@keyframes moveFromBottomFade {
+  from {
+    top: 100%;
+    opacity: 0.3;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.returnBottom {
+  animation: returnBottomFade .7s ease both;
+}
+
+@keyframes returnBottomFade {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: 100%;
+    opacity: 0.3;
+  }
+}
+
+/* Sections */
+
+  /* Section about */
+
+.section__about {
+  width: 100%;
+  background-color: $bg-color;
+  position: absolute;
+  top: 100%;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.section__about::-webkit-scrollbar {
+    width: 0;
+}
+
+.section__link {
+  font-size: 30px;
+  color: $white;
+  position: fixed;
+  right: 45px;
+  top: 45px;
+  z-index: 2;
+}
+
+  /* -> Navbar */
+
+.navbar {
+  position: fixed;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 50px;
+  height: 50vh;
+  z-index: 1;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  width: 2px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: $font-color;
+}
+
+.progress-bar--incIntroduction {
+  background-color: $red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  height: 0;
+  max-height: 100%;
+  width: 2px;
+  border-radius: 5px;
+}
+
+.progress-bar--circle {
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $font-color;
+  transition: all 0.1s;
+}
+
+.progress-bar--circle.active {
+  background-color: $red;
+}
+
+.navbar ul {
+    margin-top: -6px;
+    list-style: none;
+    height: 100%;
+}
+
+.navbar ul li {
+    position: relative;
+    width: 14px;
+    height: 25%;
+}
+
+.navbar ul li a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+.active {
+ color: #E74C5B !important;
+}
+
+/* -> Icon Scroll */
+
+.about__iconScroll {
+  position: fixed;
+  top: 80%;
+  right: 45px;
+  width: 26px;
+  height: 60px;
+  z-index: 99999;
+  transition: opacity 0.4s;
+}
+
+.iconScroll__arrow {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid rgba(255,255,255,.8);
+  border-bottom: 2px solid rgba(255,255,255,.8);
+  margin: 0 0 2px 5px;
+  transform: rotate(45deg);
+  animation: mouse-scroll 1s infinite;
+  animation-direction: alternate;
+}
+
+.iconScroll__arrow--first {
+  margin-top: 6px;
+  animation-delay: .1s;
+}
+
+.iconScroll__arrow--second {
+  animation-delay: .2s;
+}
+
+.iconScroll__arrow--third {
+  animation-delay: .3s;
+}
+
+.iconScroll__mouse {
+  height: 42px;
+  width: 24px;
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 10px;
+}
+
+.iconScroll__wheel {
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 3px;
+  margin: 5px auto 0;
+  background: rgba(255,255,255,.8);
+  animation: mouse-wheel 1.2s ease infinite;
+  border-radius: 50%;
+}
+
+@keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+  /* -> Introduction */
+
+.about__introduction {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  padding-right: 80px;
+}
+
+.about__photo {
+  width: 43%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 60px;
+}
+
+.about__text {
+  width: 57%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  padding: 0 40px 0 0;
+}
+
+.about__content {
+  text-align: center;
+}
+
+.about__figure {
+  max-width: 420px;
+}
+
+.about__image {
+  width: 100%;
+  border: 2px solid $red;
+}
+
+.section__headingBox{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.section__heading {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: bold;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.section__subheading {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: $red;
+  text-align: right;
+}
+
+.section__subheading::before {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background-color: $white;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+}
+
+.about__bio {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.about__article {
+  margin-top: 20px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.about__strong {
+  color: $white;
+}
+
+.about__link {
+  background-color: $red;
+  color: $white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: 2px solid $red;
+  transition: all 0.3s;
+  margin: 0 5px;
+  display: inline-block;
+  height: 54px;
+  line-height: 50px;
+}
+
+.about__link--CV {
+  width: 200px;
+}
+
+.about__link--social {
+  width: 54px;
+}
+
 
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
@@ -194,6 +573,27 @@ body {
 
   .hero__name {
     margin-right: 10%;
+  }
+
+  /* About */
+    /* -> Introduction */
+
+  .about__photo {
+    width: 100%;
+    min-height: 600px;
+    order: 2;
+    padding: 50px 60px 100px 60px;
+  }
+
+  .about__text {
+    width: 100%;
+    min-height: 600px;
+    padding: 100px 40px 50px 40px;
+    order: 1;
+  }
+
+  .about__article {
+    margin-left: 20px;
   }
 
 }
