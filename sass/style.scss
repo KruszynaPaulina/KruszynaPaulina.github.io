@@ -550,7 +550,7 @@ body {
 
 .about__skills {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   text-align: center;
   background-color: #0a0a0a;
   padding-right: 80px;
@@ -568,7 +568,7 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  height: 540px;
+  min-height: 540px;
   overflow: hidden;
   position: relative;
 }
@@ -820,8 +820,9 @@ body {
 .about__education {
   min-height: 1000px;
   text-align: center;
-  margin-bottom: 100px;
   padding-right: 80px;
+  border: 1px solid red;
+  margin: 50px 0;
 }
 
 .education__headingBox {
@@ -978,6 +979,206 @@ body {
   margin-bottom: 20px;
 }
 
+  /* -> Work */
+
+.about__work {
+  min-height: 900px;
+  text-align: center;
+  padding-right: 80px;
+}
+
+.work__headingBox {
+  margin: 50px 0;
+}
+
+.work__subheading:before {
+  width: 360px;
+}
+
+.about__workBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.workBox__works {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  min-width: 750px;
+}
+
+.workBox__works:hover .workBox__year {
+  color: $red;
+  transition: all 0.3s;
+}
+
+.workBox__works:hover .workBox__work {
+  background-color: $dark-grey;
+  transition: all 0.3s;
+}
+
+.workBox__dates {
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.workBox__datesBox {
+  height: 118px;
+  position: relative;
+  width: 100%;
+}
+
+.workBox__work {
+  width: 75%;
+}
+
+.workBox__year {
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: $dark-grey;
+  position: absolute;
+  top: 0;
+}
+
+.workBox__year--right {
+  right: -73px;
+}
+
+.workBox__year--left{
+  left: -60px;
+}
+
+.workBox__year--rightSecond {
+  right: -64px;
+}
+
+.workBox__date {
+  font-size: 18px;
+  position: absolute;
+  width: 250px;
+  bottom: 0;
+}
+
+.workBox__date--right {
+  right: -130px;
+}
+
+.workBox__date--left {
+  left: -58px;
+}
+
+.workBox__date--rightSecond {
+  right: -87px;
+}
+
+.workBox__work {
+  padding-left: 100px;
+  background-color: $deep-dark-grey;
+  padding-right: 100px;
+}
+
+.workBox__work--left {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: right;
+}
+
+.workBox__business {
+  font-size: 20px;
+  color: $red;
+  margin: 50px 0 10px 0;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.workBox__address {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.workBox__office {
+  color: $white;
+  font-size: 18px;
+  margin: 20px 0 50px 0;
+  line-height: 1.2;
+}
+
+  /* Footer */
+
+.footer {
+  background-color: $deep-dark-grey;
+  margin-top: 50px;
+  padding-right: 95px;
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 5px 30px 20px;
+}
+
+.footer__content {
+  width: 50%;
+}
+
+.footer__content--copyright {
+  color: $white;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.footer__content--social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+.footer__contact {
+  color: $font-color;
+}
+
+.footer__container {
+  text-align: left;
+}
+
+.footer__link {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: $grey;
+  display: inline-block;
+  text-align: center; 
+  margin-left: 10px; 
+  color: $font-color; 
+  transition: all 0.3s;
+}
+
+.footer__link:hover {
+  background-color: $red;
+  color: $white;
+}
+
+.footer__link--cv {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer__link--web {
+ color: $white;
+}
+
+.footer__link--web:hover {
+  color: $red;
+}
+
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
 
@@ -1117,6 +1318,15 @@ body {
 
   /* About */
     /* -> Skills */
+
+  .about__skills {
+    width: 100%;
+    min-height: 600px;
+  }
+
+  .carousel__dots {
+    bottom: 30px;
+  }
 
   .corousel__skillsCell {
     width: 130px; 
@@ -1295,6 +1505,71 @@ body {
     font-size: 18px;
   }
 
+  /* About */
+    /* -> Work */
+
+  .workBox__year--right {
+    right: -58px;
+  }
+
+  .workBox__year {
+    font-size: 80px;
+  }
+
+  .workBox__dates {
+    width: 150px;
+    min-width: 150px;
+  }
+
+  .workBox__datesBox {
+    height: 94px;
+  }
+
+  .workBox__date {
+    font-size: 14px;
+  }
+
+  .workBox__works {
+    min-width: 400px; 
+  }
+
+  .workBox__date--right {
+    right: -156px;
+  }
+
+  .workBox__year--left {
+    left: -48px;
+  }
+
+  .workBox__date--left {
+    left: -47px;
+  }
+
+  .workBox__year--rightSecond {
+    right: -51px;
+  }
+
+  .workBox__date--rightSecond {
+    right: -125px;
+  }
+
+  .workBox__work {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .workBox__business {
+    font-size: 18px; 
+  }
+
+  .workBox__address {
+    font-size: 14px;
+  }
+
+  .workBox__office {
+    font-size: 16px;
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and less than 768) */
@@ -1366,8 +1641,16 @@ body {
     padding-right: 0;
   }
 
+  .carousel__dots {
+    bottom: 80px;
+  }
+
   .carousel__hexagon {
     font-size: 9px;
+  }
+
+  .carousel__hexagon:before {
+    top: 5.49em;
   }
 
   .corousel__skillsCell {
@@ -1419,7 +1702,7 @@ body {
   }
 
   .carousel__arrow {
-    top: 44%;
+    top: 38%;
     font-size: 55px;
   }
 
@@ -1448,6 +1731,13 @@ body {
 
   .about__timeline:after {
     left: 12%;
+  }
+
+  /* About */
+    /* -> Work */
+
+  .about__work {
+    padding-right: 0;
   }
 
 }
@@ -1573,7 +1863,7 @@ body {
   }
 
   .carousel__arrow {
-    top: 85%;
+    top: 72%;
   }
 
 }
