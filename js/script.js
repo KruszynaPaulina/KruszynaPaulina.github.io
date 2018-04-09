@@ -43,7 +43,11 @@ $(function() {
 
       setTimeout(function() {
         aboutLinkHome.show();
-        aboutNavbar.show();
+        if ($(window).width() > 768){  
+          aboutNavbar.show(); 
+        } else {
+          aboutNavbar.hide(); 
+        }
         aboutIconScroll.show();
       }, 700);
       

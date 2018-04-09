@@ -546,6 +546,277 @@ body {
   width: 54px;
 }
 
+  /* -> Skills */
+
+.about__skills {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #0a0a0a;
+  padding-right: 80px;
+  border: 1px solid red;
+}
+
+.skills__headingBox {
+  margin: 50px 0;
+}
+
+.skills__subheading:before {
+  width: 251px;
+}
+
+.about__carousel {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid red;
+}
+
+.carousel__skillsBox {
+  max-width: 1200px;
+  height: 580px;
+}
+
+.carousel__skillsTitle {
+  margin-bottom: 20px;
+}
+
+.carousel__skillsRow {
+  display: flex;
+  justify-content: center;
+  height: 137px;
+}
+
+.corousel__skillsCell {
+  width: 170px; 
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.carousel__hexagon {
+  font-size: 12px; /* Sterowanie rozmiarem figury. */
+  width: 10em;
+  height: 5.6em;
+  background-color: $white;
+  position: relative;
+  margin: 55px auto 0;
+  animation-name: grow;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+.carousel__hexagon:before {
+  content: '';
+  position: absolute;
+  top: 5.53em;
+  left: 0; 
+  border-top: 3em solid $white;
+  border-left: 5em solid transparent;
+  border-right: 5em solid transparent;
+}
+
+.carousel__hexagon:after {
+  content: '';
+  position: absolute;
+  bottom: 5.53em;
+  left: 0; 
+  border-bottom: 3em solid $white;
+  border-left: 5em solid transparent;
+  border-right: 5em solid transparent;
+}
+
+.corousel__logo {
+  position: absolute;
+  top: -36px;
+  width: 100%;
+  height: 138px;
+  z-index: 1;
+}
+
+.corousel__logo--animTwo {
+  animation-delay: 1s;
+}
+
+.corousel__logo--animThree {
+  animation-delay: 2s;
+}
+
+.js {
+  background-image: url('../images/js.svg');
+  background-position: center;
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
+
+.html5 {
+  color: #e44d26;
+  line-height: 145px;
+  font-size: 85px;
+}
+
+.css3 {
+  color: #1b73ba;
+  line-height: 145px;
+  font-size: 85px;
+}
+
+.jquery {
+  font-size: 75px;
+  line-height: 135px;
+}
+
+.sass {
+  font-size: 85px;
+  line-height: 135px;
+}
+
+.bootstrap {
+  font-size: 70px;
+  line-height: 135px;
+}
+
+.ajax {
+  background-image: url('../images/ajax.svg');
+  background-position: center 40px;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+.git {
+  font-size: 80px;
+  line-height: 135px;
+}
+
+.npm {
+  font-size: 80px;
+  color: #cb3837;
+  line-height: 135px;
+}
+
+.photoshop {
+  font-size: 65px;
+  line-height: 135px;
+}
+
+.es6 {
+  background-image: url('../images/es6.png');
+  background-position: center 37px;
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
+
+.webpack{
+  font-size: 80px;
+  line-height: 140px;
+}
+
+.node {
+  font-size: 80px;
+  line-height: 140px;
+}
+
+.react {
+  font-size: 80px;
+  line-height: 140px;
+}
+
+.redux {
+  background-image: url('../images/redux.png');
+  background-position: center 29px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.express {
+  font-size: 80px;
+  line-height: 140px;
+}
+
+.mongodb {
+  font-size: 80px;
+  line-height: 140px;
+}
+
+.mern {
+  background-image: url('../images/mern.png');
+  background-position: center 48px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.carousel__skillsList {
+  max-width: 2400px;
+  width: 200%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.carousel__skillsList li {
+  list-style-type: none;
+  width: 50%;
+  height: 580px;
+  float: left;
+}
+
+.carousel__dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
+
+.carousel__dots li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid $white;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel__dots li.active {
+  background-color: $white;
+  border: 3px solid $red;
+}
+
+.carousel__arrow {
+  position: absolute;
+  z-index: 1;
+  color: $white;
+  font-size: 70px;
+  top: 42%;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.carousel__arrow--left {
+  left: 20px;
+}
+
+.carousel__arrow--right {
+  right: 20px;
+}
+
 
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
@@ -616,10 +887,28 @@ body {
     color: $red;
   }
 
+  /* About */
+    /* -> Skills */
+
+  .carousel__arrow:hover {
+    color: $red;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and less than 992) */
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
+
+    /* --Focus */
+  
+  .about__link:focus {
+    background-color: $bg-color;
+    border: 2px solid $red;
+    color: $red;
+  }
+
+  /* Home */
+    /* -> Hero */
 
   .heading__name {
     font-size: 65px;
@@ -647,10 +936,104 @@ body {
     margin-top: -10%;
   }
 
+  /* About */
+    /* -> Skills */
+
+  .corousel__skillsCell {
+    width: 130px; 
+  }
+
+  .carousel__skillsRow {
+    height: 115px;
+  }
+
+  .carousel__hexagon {
+    font-size: 10px;
+  }
+
+  .carousel__skillsTitle {
+    margin-bottom: 40px;
+  }
+
+  .js {
+    background-position: center 44%;
+    background-size: 50%;
+  }
+
+  .html5, .css3 {
+    line-height: 135px;
+    font-size: 70px;
+  }
+
+  .jquery {
+    font-size: 60px;
+    line-height: 130px;
+  }
+
+  .sass {
+    line-height: 125px;
+    font-size: 70px;
+  }
+
+  .bootstrap {
+    font-size: 55px;
+    line-height: 130px;
+  }
+
+  .ajax {
+    background-size: 85%;
+  }
+
+  .git {
+    font-size: 65px;
+    line-height: 130px;
+  }
+
+  .npm {
+    font-size: 70px;
+    line-height: 130px;
+  }
+
+  .photoshop {
+    font-size: 55px;
+    line-height: 130px;
+  }
+
+  .es6 {
+    background-position: center 40px;
+    background-size: 50%;
+  }
+
+  .webpack, .node, .react, .express, .mongodb {
+    font-size: 60px;
+    line-height: 130px;
+  }
+
+  .redux {
+    background-position: center 35px;
+    background-size: 60%;
+  }
+
+  .mern {
+    background-position: center 50px;
+    background-size: 70%;
+  }
+
+  .carousel__arrow {
+    top: 41%;
+  }
+
+  .carousel__arrow {
+    color: $red;
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and less than 768) */
 @media (max-width: 768px) {
+
+  /* Home */
+    /* -> Hero */
 
   .hero {
     align-items: flex-start;
@@ -683,9 +1066,101 @@ body {
     text-align: center;
   }
 
+  /* About */
+    /* -> Introduction */
+
+  .navbar {
+    display: none;
+  }
+
+  .about__iconScroll {
+    position: absolute;
+    left: 45px;
+    top: 45px;
+  }
+
+  .section__link {
+    position: absolute;
+  }
+
+  .about__introduction {
+    padding-right: 0;
+  }
+
+  .about__article {
+    margin-left: 0;
+  }
+
+  /* About */
+    /* -> Skills */
+
+  .about__skills {
+    padding-right: 0;
+  }
+
+  .carousel__hexagon {
+    font-size: 9px;
+  }
+
+  .corousel__skillsCell {
+    width: 110px;
+  }
+
+  .carousel__skillsRow {
+    height: 95px;
+  }
+
+  .about__carousel {
+    height: 465px;
+  }
+
+  .about__skills {
+    height: 670px;
+  }
+
+  .html5, .css3 {
+    line-height: 130px;
+    font-size: 60px;
+  }
+
+  .jquery, .bootstrap{
+    font-size: 50px;
+    line-height: 125px;
+  }
+
+  .sass, .npm {
+    font-size: 60px;
+  }
+
+  .git {
+    font-size: 55px;
+  }
+
+  .photoshop {
+    font-size: 45px;
+  }
+
+  .webpack, .node, .react, .express, .mongodb {
+    font-size: 50px;
+    line-height: 125px;
+  }
+
+  .redux {
+    background-position: center 40px;
+    background-size: 52%;
+  }
+
+  .carousel__arrow {
+    top: 44%;
+    font-size: 55px;
+  }
+
 }
 
 @media (max-width: 650px) {
+
+  /* Home */
+    /* -> Hero */
   
   .heading__name {
     font-size: 55px;
@@ -721,6 +1196,9 @@ body {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
 
+  /* Home */
+    /* -> Hero */
+
   .heading__name {
     font-size: 50px;
     line-height: 47px;
@@ -738,9 +1216,77 @@ body {
     background-size: 58%;
   }
 
+  /* About */
+    /* -> Skills */
+
+  .carousel__hexagon {
+    font-size: 8px;
+  }
+
+  .corousel__skillsCell {
+    width: 100px;
+  }
+
+  .carousel__skillsRow {
+    height: 85px;
+  }
+
+  .carousel__arrow {
+    font-size: 60px;
+    top: 41%;
+  }
+
+  .js {
+    background-position: center 41%;
+  }
+
+  .html5, .css3 {
+    font-size: 55px;
+  }
+
+  .jquery, .bootstrap {
+    font-size: 45px;
+    line-height: 120px;
+  }
+
+  .sass, .npm {
+    font-size: 55px;
+    line-height: 120px;
+  }
+
+  .photoshop {
+    font-size: 40px;
+    line-height: 120px;
+  }
+
+  .git {
+    font-size: 50px;
+    line-height: 120px;
+  }
+
+  .webpack, .node, .react, .express, .mongodb {
+    font-size: 45px;
+    line-height: 120px;
+  }
+
+  .mern {
+    background-position: center 47px;
+  }
+
+  .carousel__dots {
+    margin-bottom: 20px;
+  }
+
+  .carousel__arrow {
+    top: 85%;
+  }
+
 }
 
 @media (max-width: 450px) {
+
+  /* Home */
+    /* -> Hero */
 
   .heading__name {
     font-size: 40px;
@@ -762,6 +1308,10 @@ body {
 }
 
 @media (max-width: 390px) {
+
+  /* Home */
+    /* -> Hero */
+
   .heading__name {
     font-size: 30px;
     line-height: 28px;
