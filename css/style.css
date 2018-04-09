@@ -1652,7 +1652,43 @@ body {
     left: -35px; }
 
   .nav__item--about {
-    bottom: 20px; } }
+    bottom: 20px; }
+
+  /* About */
+  /* -> Heading */
+  .section__heading {
+    font-size: 30px;
+    padding-bottom: 5px; }
+
+  .section__subheading {
+    font-size: 15px; }
+
+  .section__subheading::before {
+    bottom: 6px; }
+
+  .section__subheading::before {
+    width: 17px; }
+
+  .skills__subheading:before {
+    width: 131px; }
+
+  .education__subheading:before {
+    width: 42px; }
+
+  .work__subheading:before {
+    width: 210px; }
+
+  /* About */
+  /* -> Work */
+  .workBox__work {
+    padding-right: 40px; }
+
+  .workBox__business, .workBox__office {
+    font-size: 16px; }
+
+  .workBox__work--left {
+    padding-right: 70px;
+    padding-left: 40px; } }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
   /* Home */
@@ -1718,7 +1754,65 @@ body {
     margin-bottom: 20px; }
 
   .carousel__arrow {
-    top: 72%; } }
+    top: 72%; }
+
+  /* About */
+  /* -> Education */
+  .education__year {
+    font-size: 50px; }
+
+  .education__specialization {
+    font-size: 18px; }
+
+  .education__specification, .education__address {
+    font-size: 15px; }
+
+  .education__school {
+    font-size: 16px; }
+
+  /* About */
+  /* -> Work */
+  .workBox__business, .workBox__office {
+    font-size: 14px; }
+
+  .workBox__date {
+    font-size: 12px; }
+
+  .workBox__year {
+    font-size: 65px; }
+
+  .workBox__dates {
+    width: 106px;
+    min-width: 106px; }
+
+  .workBox__work {
+    padding-left: 55px;
+    padding-right: 30px; }
+
+  .workBox__work--left {
+    padding-left: 30px;
+    padding-right: 55px; }
+
+  .workBox__datesBox {
+    height: 77px; }
+
+  .workBox__year--right {
+    right: -47px; }
+
+  .workBox__date--right {
+    right: -167px; }
+
+  .workBox__year--left {
+    left: -39px; }
+
+  .workBox__date--left {
+    left: -38px; }
+
+  .workBox__year--rightSecond {
+    right: -42px; }
+
+  .workBox__date--rightSecond {
+    right: -141px; } }
 @media (max-width: 450px) {
   /* Home */
   /* -> Hero */
@@ -1733,7 +1827,152 @@ body {
     margin-top: 52%; }
 
   .hero {
-    background-size: 73%; } }
+    background-size: 73%; }
+
+  /* About */
+  /* -> Skills */
+  .carousel__hexagon {
+    font-size: 6px; }
+
+  .corousel__skillsCell {
+    width: 75px; }
+
+  .carousel__skillsRow {
+    height: 65px; }
+
+  .about__carousel {
+    height: 380px; }
+
+  .about__skills {
+    height: 540px; }
+
+  .carousel__skillsTitle {
+    font-size: 15px;
+    margin: 0 20px 40px 20px; }
+
+  .js {
+    background-position: center 35%; }
+
+  .html5, .css3 {
+    font-size: 45px;
+    line-height: 110px; }
+
+  .jquery, .bootstrap {
+    font-size: 35px;
+    line-height: 107px; }
+
+  .sass, .npm {
+    font-size: 40px;
+    line-height: 107px; }
+
+  .git {
+    font-size: 40px;
+    line-height: 107px; }
+
+  .photoshop {
+    font-size: 30px;
+    line-height: 107px; }
+
+  .es6 {
+    background-position: center 38px;
+    background-size: 50%; }
+
+  .webpack, .node, .react, .express, .mongodb {
+    font-size: 40px;
+    line-height: 107px; }
+
+  .redux {
+    background-position: center 36px;
+    background-size: 60%; }
+
+  .mern {
+    background-position: center 45px; }
+
+  .carousel__arrow {
+    font-size: 50px;
+    top: 66%; }
+
+  .carousel__dots {
+    margin-bottom: 56px; }
+
+  /* About */
+  /* -> Education */
+  .education__year {
+    font-size: 40px; }
+
+  .education__specification, .education__address {
+    font-size: 14px; }
+
+  .education__specialization {
+    font-size: 16px; }
+
+  .education__school {
+    font-size: 15px; }
+
+  .about__timeline:before {
+    left: 8%; }
+
+  .timeline__empty {
+    width: 8%; }
+
+  .timeline__education {
+    width: 92%; }
+
+  .education__studies {
+    padding-right: 20px; }
+
+  .about__timeline:after {
+    left: 8%; }
+
+  /* About */
+  /* -> Work */
+  .workBox__dates {
+    width: 0;
+    min-width: 0; }
+
+  .workBox__work {
+    width: 100%;
+    text-align: right; }
+
+  .workBox__work--left {
+    text-align: left; }
+
+  .workBox__works {
+    min-width: 300px; }
+
+  .workBox__work {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px; }
+
+  .workBox__office {
+    margin-bottom: 20px; }
+
+  .workBox__dates {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
+  .workBox__year--right {
+    right: 0;
+    left: 10px; }
+
+  .workBox__date--right {
+    right: 0;
+    left: 12px; }
+
+  .workBox__year--left {
+    left: -165px; }
+
+  .workBox__date--left {
+    left: -160px; }
+
+  .workBox__date--rightSecond {
+    right: 0;
+    left: 12px; }
+
+  .workBox__date {
+    width: 150px; } }
 @media (max-width: 390px) {
   /* Home */
   /* -> Hero */
@@ -1742,4 +1981,9 @@ body {
     line-height: 28px; }
 
   .heading__profession {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  /* About */
+  /* -> Education */
+  .education__year {
+    font-size: 30px; } }
