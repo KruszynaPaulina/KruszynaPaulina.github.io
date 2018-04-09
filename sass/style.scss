@@ -554,7 +554,6 @@ body {
   text-align: center;
   background-color: #0a0a0a;
   padding-right: 80px;
-  border: 1px solid red;
 }
 
 .skills__headingBox {
@@ -572,7 +571,6 @@ body {
   height: 540px;
   overflow: hidden;
   position: relative;
-  border: 1px solid red;
 }
 
 .carousel__skillsBox {
@@ -817,6 +815,168 @@ body {
   right: 20px;
 }
 
+  /* -> Education */
+
+.about__education {
+  min-height: 1000px;
+  text-align: center;
+  margin-bottom: 100px;
+  padding-right: 80px;
+}
+
+.education__headingBox {
+  margin: 50px 0;
+}
+
+.education__subheading:before {
+  width: 118px;
+}
+
+.about__timeline {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.about__timeline:after {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: $dark-grey;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  z-index: 1;
+}
+
+.about__timeline:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 41px solid $red;
+  margin: 40px auto 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 0;
+  margin-top: -20px;
+  z-index: 2;
+}
+
+.timeline__empty {
+  width: 50%;
+}
+
+.timeline__education {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+}
+
+.timeline__education--left {
+  justify-content: flex-end;
+}
+
+.education__years {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.education__years:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 3px solid $white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  z-index: 2;
+}
+
+.education__years--right:before {
+  left: -28px;
+}
+
+.education__years--left:before {
+  right: -28px;
+}
+
+.timeline__education:hover .education__year {
+  color: $red;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.timeline__education:hover .education__years:before {
+  background-color: $white;
+  border: 3px solid $red;
+}
+
+.education__year {
+  font-size: 60px;
+  font-weight: bold;
+  color: $dark-grey;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+.education__year--left{
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.education__studies {
+  text-align: left;
+}
+
+.education__studies--left {
+  text-align: right;
+}
+
+.education__specialization {
+  font-size: 20px;
+  color: $red;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+.education__school {
+  color: $white;
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+  line-height: 1.2;
+}
+
+.date {
+  display: block;
+}
+
+.education__address {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
 
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
@@ -865,6 +1025,25 @@ body {
 
   .about__article {
     margin-left: 20px;
+  }
+
+  /* About */
+    /* -> Education */
+
+  .education__year {
+    font-size: 50px;
+  }
+
+  .education__specialization {
+    font-size: 18px;
+  }
+
+  .education__specification, .education__address {
+    font-size: 15px;
+  }
+
+  .education__school {
+    font-size: 16px;
   }
 
 }
@@ -1027,6 +1206,95 @@ body {
     color: $red;
   }
 
+  /* About */
+    /* -> Education */
+
+  .timeline--first {
+    order: 1;
+  }
+
+  .timeline--two {
+    order: 2;
+  }
+
+  .timeline--three {
+    order: 3;
+  }
+
+  .timeline--four {
+    order: 4;
+  }
+
+  .timeline--five {
+    order: 5;
+  }
+
+  .timeline--six {
+    order: 6;
+  }
+
+  .timeline--seven {
+    order: 7;
+  }
+
+  .timeline--eight {
+    order: 8;
+  }
+  
+  .education__studies--left {
+    text-align: left;
+  }
+
+  .education__year--left {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  .education__years--left:before {
+    right: 0;
+    left: -28px;
+  }
+
+  .about__timeline:before{
+    left: 20%;
+  }
+
+  .about__timeline:after {
+    left: 20%;
+  }
+
+  .timeline__empty {
+    width: 20%;
+  }
+
+  .timeline__education {
+    width: 80%;
+  }
+
+  .timeline__education--left {
+    justify-content: flex-start; 
+  }
+
+  .education__studies {
+    padding-right: 20%;
+  }
+
+  .education__year {
+    font-size: 60px;
+  }
+
+  .education__specialization {
+    font-size: 20px;
+  }
+
+  .education__specification, .education__address {
+    font-size: 16px;
+  }
+
+  .education__school {
+    font-size: 18px;
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and less than 768) */
@@ -1153,6 +1421,33 @@ body {
   .carousel__arrow {
     top: 44%;
     font-size: 55px;
+  }
+
+  /* About */
+    /* -> Education */
+
+  .about__education {
+    padding-right: 0;
+  }
+
+  .about__timeline:before {
+    left: 12%;
+  }
+
+  .timeline__empty {
+    width: 12%;
+  }
+
+  .timeline__education {
+    width: 88%;
+  }
+
+  .education__studies {
+    padding-right: 12%;
+  }
+
+  .about__timeline:after {
+    left: 12%;
   }
 
 }
