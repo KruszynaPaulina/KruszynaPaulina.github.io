@@ -842,7 +842,6 @@ body {
   min-height: 1000px;
   text-align: center;
   padding-right: 80px;
-  border: 1px solid red;
   margin: 50px 0; }
 
 .education__headingBox {
@@ -1118,7 +1117,7 @@ body {
 .footer {
   background-color: #0a0a0a;
   margin-top: 50px;
-  padding-right: 95px;
+  padding-right: 112px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1236,7 +1235,12 @@ body {
     font-size: 15px; }
 
   .education__school {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  /* About */
+  /* -> Work */
+  .workBox__works {
+    width: 90%; } }
 /* Hover */
 @media (min-width: 992px) {
   /* Home */
@@ -1628,7 +1632,15 @@ body {
   /* About */
   /* -> Work */
   .about__work {
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  /* About */
+  /* -> Footer */
+  .footer {
+    padding-right: 0; }
+
+  .container {
+    padding: 30px 20px; } }
 @media (max-width: 650px) {
   /* Home */
   /* -> Hero */
@@ -1812,7 +1824,26 @@ body {
     right: -42px; }
 
   .workBox__date--rightSecond {
-    right: -141px; } }
+    right: -141px; }
+
+  /* -> About */
+  /* -> Footer */
+  .footer__content {
+    width: 100%;
+    text-align: center; }
+
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .footer__content--social {
+    margin-top: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .footer__link {
+    margin: 0 5px; } }
 @media (max-width: 450px) {
   /* Home */
   /* -> Hero */
@@ -1828,6 +1859,26 @@ body {
 
   .hero {
     background-size: 73%; }
+
+  /* About */
+  /* -> Introduction */
+  .about__link {
+    font-size: 16px;
+    margin: 0 2px;
+    height: 40px;
+    line-height: 38px; }
+
+  .about__link--CV {
+    width: 174px; }
+
+  .about__link--social {
+    width: 40px; }
+
+  .about__text {
+    padding: 100px 20px 50px 20px; }
+
+  .about__photo {
+    padding: 50px 40px 100px 40px; }
 
   /* About */
   /* -> Skills */

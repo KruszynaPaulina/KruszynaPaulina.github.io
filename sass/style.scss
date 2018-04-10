@@ -821,7 +821,6 @@ body {
   min-height: 1000px;
   text-align: center;
   padding-right: 80px;
-  border: 1px solid red;
   margin: 50px 0;
 }
 
@@ -1113,7 +1112,7 @@ body {
 .footer {
   background-color: $deep-dark-grey;
   margin-top: 50px;
-  padding-right: 95px;
+  padding-right: 112px;
   display: flex;
 }
 
@@ -1245,6 +1244,13 @@ body {
 
   .education__school {
     font-size: 16px;
+  }
+
+  /* About */
+    /* -> Work */
+
+  .workBox__works {
+    width: 90%;
   }
 
 }
@@ -1740,6 +1746,17 @@ body {
     padding-right: 0;
   }
 
+  /* About */ 
+    /* -> Footer */
+
+  .footer {
+    padding-right: 0;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+
 }
 
 @media (max-width: 650px) {
@@ -1764,7 +1781,7 @@ body {
     background-size: 50%;
   }
 
-    .nav__item--contact {
+  .nav__item--contact {
     right: -25px;
   }
 
@@ -1823,6 +1840,7 @@ body {
     padding-right: 70px;
     padding-left: 40px;
   }
+
 }
 
 
@@ -1991,6 +2009,28 @@ body {
     right: -141px;
   }
 
+  /* -> About */
+    /* -> Footer */
+
+  .footer__content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    flex-wrap: wrap
+  }
+
+  .footer__content--social {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .footer__link  {
+    margin: 0 5px;
+  }
+
+
 }
 
 @media (max-width: 450px) {
@@ -2013,6 +2053,32 @@ body {
 
   .hero {
     background-size: 73%;
+  }
+
+  /* About */
+    /* -> Introduction */
+
+  .about__link {
+    font-size: 16px;
+    margin: 0 2px;
+    height: 40px;
+    line-height: 38px;
+  }
+
+  .about__link--CV {
+    width: 174px;
+  }
+
+  .about__link--social {
+    width: 40px;
+  }
+
+  .about__text {
+    padding: 100px 20px 50px 20px;
+  }
+
+  .about__photo {
+    padding: 50px 40px 100px 40px;
   }
 
   /* About */
