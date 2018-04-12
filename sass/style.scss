@@ -55,7 +55,6 @@ body {
   transform: translateY(-50%);
   transform: rotateZ(90deg);
   left: -10px;
-
 }
 
 .nav__item--contact {
@@ -77,9 +76,9 @@ body {
   text-transform: uppercase;
   color: $red;
   font-size: 20px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   transition: all 0.3s;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @keyframes shine {
@@ -136,7 +135,7 @@ body {
 
 .hero__name {
   margin-top: 5%;
-  margin-right: 8%;
+  margin-right: 12%;
 }
 
 .hero__heading {
@@ -162,8 +161,8 @@ body {
 .heading__profession {
   margin-top: 10%;
   font-size: 45px;
-  font-weight: bold;
-  color: #7c7c7c;
+  font-weight: 600;
+  color: $white;
   text-align: right;
 }
 
@@ -1945,6 +1944,36 @@ body {
     font-size: 16px;
   }
 
+  /* Section projects */
+
+  .projects__cell, .contact__columnCell {
+    width: 75%;
+  }
+
+  .projects__rowCell {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects__box {
+    min-height: 2882px;
+  }
+
+  /* Section contact */
+
+  .contact__container, .projects__container {
+    padding: 20px 10px 0 10px;
+  }
+
+  .contact__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact__box {
+    min-height: 1455px;
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and less than 768) */
@@ -1977,11 +2006,12 @@ body {
 
   .heading__name {
     font-weight: 700;
-
+    color: $white;
   }
 
   .heading__profession {
     text-align: center;
+    color: #7c7c7c;
   }
 
   /* About */
@@ -2399,6 +2429,66 @@ body {
     margin: 0 5px;
   }
 
+  /* Section projects */
+
+  .projects__subheading:before {
+    width: 65px;
+  }
+
+  .projects__cell {
+    width: 100%;
+  }
+
+  .projects__cell {
+    height: 300px;
+  }
+
+  .projects__box {
+    min-height: 2340px;
+  }
+
+  .projects__technologies, .projects__description {
+    font-size: 14px;
+  }
+
+  .projects__technologies {
+    margin: 5px;
+    padding: 2px;
+  }
+
+  .projects__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .projects__link {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .projects__description {
+    margin-bottom: 10px;
+  }
+
+  .projects__box {
+    min-height: 2250px;
+  }
+
+  /* Section contact */
+
+  .contact__columnCell {
+    width: 100%;
+  }
+
+  .contact__subheading:before {
+    width: 5px;
+  }
+
+  .contact__title {
+    font-size: 25px;
+  }
 
 }
 
@@ -2448,6 +2538,10 @@ body {
 
   .about__photo {
     padding: 50px 40px 100px 40px;
+  }
+
+  .about__bio {
+    font-size: 14px;
   }
 
   /* About */
@@ -2636,6 +2730,23 @@ body {
     width: 150px;
   }
 
+  /* Section contact */
+
+  .contact__button {
+    font-size: 16px;
+    height: 40px;
+    width: 184px;
+    padding: 0; 
+  }
+
+  .contact__link {
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+  }
+
+
 }
 
 @media (max-width: 390px) {
@@ -2649,7 +2760,7 @@ body {
   }
 
   .heading__profession {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   /* About */
