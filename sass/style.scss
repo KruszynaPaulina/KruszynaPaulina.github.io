@@ -126,16 +126,20 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background-image: url('../images/paulina__hero.jpg');
-  background-size: 35%;
-  background-repeat: no-repeat;
-  background-position: 10% bottom;
 }
 
 .hero__name {
   margin-top: 5%;
   margin-right: 12%;
+}
+
+.hero__photo {
+  width: 50%;
+  height: 100%;
+  background-image: url('../images/paulina__hero.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 70% bottom;
 }
 
 .hero__heading {
@@ -486,26 +490,27 @@ body {
   text-transform: uppercase;
   color: $white;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   letter-spacing: 1px;
 }
 
 .section__subheading {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   color: $red;
   text-align: right;
+  letter-spacing: -1px;
 }
 
 .section__subheading::before {
   content: '';
-  width: 60px;
+  width: 88px;
   height: 2px;
   background-color: $white;
   position: absolute;
   bottom: 8px;
-  left: 0;
+  left: 3px;
 }
 
 .about__bio {
@@ -560,7 +565,7 @@ body {
 }
 
 .skills__subheading:before {
-  width: 251px;
+  width: 282px;
 }
 
 .about__carousel {
@@ -828,7 +833,7 @@ body {
 }
 
 .education__subheading:before {
-  width: 118px;
+  width: 140px;
 }
 
 .about__timeline {
@@ -990,7 +995,7 @@ body {
 }
 
 .work__subheading:before {
-  width: 360px;
+  width: 405px;
 }
 
 .about__workBox {
@@ -1218,7 +1223,7 @@ body {
 }
 
 .projects__subheading:before {
-  width: 150px;
+  width: 158px;
 }
 
 .projects__container {
@@ -1394,7 +1399,7 @@ body {
   width: 100%; 
   height: 100%;
   position: relative;
-  min-height: 900px;
+  min-height: 800px;
 }
 
 .contact__particles {
@@ -1419,7 +1424,7 @@ body {
 }
 
 .contact__subheading:before {
-  width: 65px;
+  width: 82px;
 }
 
 .contact__container {
@@ -1479,6 +1484,10 @@ body {
   font-size: 16px;
 }
 
+.contact__imput--email:focus, .contact__textarea:focus {
+  outline: 2px solid $font-color;
+}
+
 .footer__content--social {
   padding-right: 20px;
 }
@@ -1505,12 +1514,6 @@ body {
   border: 2px solid $red;
   transition: all 0.3s;
   cursor: pointer;
-}
-
-.contact__button:hover {
-  background-color: #010101;
-  border: 2px solid #dd4135;
-  color: #dd4135;
 }
 
 .contact__blende {
@@ -1540,12 +1543,6 @@ body {
   border: 2px solid $red;
 }
 
-.contact__link:hover {
-  background-color: #010101;
-  border: 2px solid #dd4135;
-  color: #dd4135;
-}
-
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
 
@@ -1572,6 +1569,10 @@ body {
 
   .hero__name {
     margin-right: 10%;
+  }
+
+  .hero__photo {
+    background-position: right bottom;
   }
 
   /* About */
@@ -1648,17 +1649,36 @@ body {
     color: $red;
   }
 
+  /* Section contact */
+
+  .contact__button:hover, .contact__link:hover {
+    background-color: #010101;
+    border: 2px solid #dd4135;
+    color: #dd4135;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and less than 992) */
 @media (max-width: 991.98px) {
 
-    /* --Focus */
+    /* -- Focus */
+
+  /* Home */
+    /* Navigation */
   
   .about__link:focus {
     background-color: $bg-color;
     border: 2px solid $red;
     color: $red;
+  }
+
+  /* Section contact */
+
+  .contact__button:focus, .contact__link:focus {
+    background-color: #010101;
+    border: 2px solid #dd4135;
+    color: #dd4135;
   }
 
   /* Home */
@@ -1971,7 +1991,7 @@ body {
   }
 
   .contact__box {
-    min-height: 1455px;
+    min-height: 1350px;
   }
 
 }
@@ -1992,7 +2012,25 @@ body {
   .hero__name {
     margin: 0;
     text-align: center;
-    margin-top: 25%;
+    padding-top: 23%;
+    width: 100%;
+    height: 50%;
+    order: 1;
+  }
+
+   .hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .hero__photo {
+    width: 100%;
+    height: 50%;
+    background-position: center bottom;
+    order: 2;
   }
 
   .hero__heading {
@@ -2001,17 +2039,13 @@ body {
 
   .hero__heading--mobile {
     display: block;
-    color: #7c7c7c;
-  }
-
-  .heading__name {
-    font-weight: 700;
     color: $white;
   }
 
   .heading__profession {
     text-align: center;
     color: #7c7c7c;
+    margin-top: 8%;
   }
 
   /* About */
@@ -2173,7 +2207,7 @@ body {
   }
 
   .hero__name {
-    margin-top: 30%;
+    padding-top: 30%;
   }
 
   .hero {
@@ -2192,7 +2226,7 @@ body {
     bottom: 20px;
   }
 
-    /* About */
+  /* About */
     /* -> Heading */
 
    .section__heading {
@@ -2206,22 +2240,27 @@ body {
 
   .section__subheading::before {
     bottom: 6px;
-  }
-
-  .section__subheading::before {
-    width: 17px;
+    width: 30px;
   }
 
   .skills__subheading:before {
-    width: 131px;
+    width: 145px;
   }
 
   .education__subheading:before {
-    width: 42px;
+    width: 54px;
   }
 
   .work__subheading:before {
-    width: 210px;
+    width: 232px;
+  }
+
+  .projects__subheading:before {
+    width: 70px;
+  }
+
+  .contact__subheading:before {
+    width: 15px;
   }
 
   /* About */
@@ -2259,7 +2298,7 @@ body {
   }
 
   .hero__name {
-    margin-top: 34%;
+    padding-top: 34%;
   }
 
   .hero {
@@ -2431,10 +2470,6 @@ body {
 
   /* Section projects */
 
-  .projects__subheading:before {
-    width: 65px;
-  }
-
   .projects__cell {
     width: 100%;
   }
@@ -2482,10 +2517,6 @@ body {
     width: 100%;
   }
 
-  .contact__subheading:before {
-    width: 5px;
-  }
-
   .contact__title {
     font-size: 25px;
   }
@@ -2507,7 +2538,7 @@ body {
   }
 
   .hero__name {
-    margin-top: 52%;
+    padding-top: 52%;
   }
 
   .hero {
@@ -2516,6 +2547,10 @@ body {
 
   /* About */
     /* -> Introduction */
+
+  .about__iconScroll {
+    visibility: hidden;
+  }
 
   .about__link {
     font-size: 16px;
@@ -2744,6 +2779,10 @@ body {
     height: 40px;
     width: 40px;
     line-height: 38px;
+  }
+
+  .contact__description {
+    font-size: 14px;
   }
 
 
