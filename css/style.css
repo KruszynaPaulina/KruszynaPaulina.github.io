@@ -78,6 +78,71 @@ body {
   position: relative;
   overflow: hidden; }
 
+/* -- Preloader */
+.preload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #010101;
+  transition: opacity 400ms ease-in-out, visibility 0s 400ms; }
+
+.show-preloader {
+  visibility: visible;
+  opacity: 1; }
+
+.circle {
+  background-color: #b7b7b7;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation: bounce-circles 1s infinite ease-in-out;
+          animation: bounce-circles 1s infinite ease-in-out; }
+
+.preload .circle:nth-child(1) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s; }
+
+.preload .circle:nth-child(2) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s; }
+
+.preload .circle:nth-child(3) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s; }
+
+.preload .circle:nth-child(4) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s; }
+
+@-webkit-keyframes bounce-circles {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); } }
+
+@keyframes bounce-circles {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); } }
 /* -> Navigation */
 /* -> Menu List */
 .nav__item {
@@ -404,7 +469,7 @@ body {
   right: 45px;
   width: 26px;
   height: 60px;
-  z-index: 99999;
+  z-index: 2;
   transition: opacity 0.4s; }
 
 .iconScroll__arrow {

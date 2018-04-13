@@ -12,6 +12,15 @@ $(function() {
 
   var aboutNavbar = $('#about__navbar');
   var aboutIconScroll = $('#about__iconScroll');
+
+
+  var preload = $('#preload');
+
+  $(window).on("load", function () {
+      setTimeout(function () {
+          preload.removeClass('show-preloader');
+      }, 2000);
+  });
   
 // Home
 
