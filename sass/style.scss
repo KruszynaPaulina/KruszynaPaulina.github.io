@@ -26,7 +26,7 @@ body {
   overflow-x: hidden;
   font-weight: 300px;
   max-width: 1600px;
-  max-height: 950px;
+  max-height: 1366px;
 }
 
 * {
@@ -168,6 +168,7 @@ body {
   font-weight: 600;
   color: $white;
   text-align: right;
+  position: relative;
 }
 
 /* Page Transitions */
@@ -1144,7 +1145,7 @@ body {
   align-items: center;
  }
 
-.footer__contact {
+p.footer__contact {
   color: $font-color;
 }
 
@@ -1164,11 +1165,6 @@ body {
   transition: all 0.3s;
 }
 
-.footer__link:hover {
-  background-color: $red;
-  color: $white;
-}
-
 .footer__link--cv {
   font-weight: bold;
   text-transform: uppercase;
@@ -1176,10 +1172,6 @@ body {
 
 .footer__link--web {
  color: $white;
-}
-
-.footer__link--web:hover {
-  color: $red;
 }
 
   /* Section projects */
@@ -1203,7 +1195,7 @@ body {
   width: 100%; 
   height: 100%;
   position: relative;
-  min-height: 1623px;
+  min-height: 1564px;
 }
 
 .projects__particles {
@@ -1216,6 +1208,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  padding-top: 50px;
 }
 
 .projects__headingBox {
@@ -1412,6 +1405,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  padding-top: 50px;
 }
 
 .contact__footer {
@@ -1543,6 +1537,10 @@ body {
   border: 2px solid $red;
 }
 
+p.contact__description {
+  color: $font-color;
+}
+
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
 
@@ -1649,6 +1647,17 @@ body {
     color: $red;
   }
 
+  /* Footer */
+
+  .footer__link:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  .footer__link--web:hover {
+    color: $red;
+  }
+
   /* Section contact */
 
   .contact__button:hover, .contact__link:hover {
@@ -1679,6 +1688,17 @@ body {
     background-color: #010101;
     border: 2px solid #dd4135;
     color: #dd4135;
+  }
+
+  /* Footer */
+
+  .footer__link:focus {
+    background-color: $red;
+    color: $white;
+  }
+
+  .footer__link--web:focus {
+    color: $red;
   }
 
   /* Home */
@@ -1976,7 +1996,7 @@ body {
   }
 
   .projects__box {
-    min-height: 2882px;
+    min-height: 2770px;
   }
 
   /* Section contact */

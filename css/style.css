@@ -64,7 +64,7 @@ body {
   overflow-x: hidden;
   font-weight: 300px;
   max-width: 1600px;
-  max-height: 950px; }
+  max-height: 1366px; }
 
 * {
   box-sizing: border-box; }
@@ -195,7 +195,8 @@ body {
   font-size: 45px;
   font-weight: 600;
   color: #ffffff;
-  text-align: right; }
+  text-align: right;
+  position: relative; }
 
 /* Page Transitions */
 /* -> Transition Right */
@@ -1152,7 +1153,7 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-.footer__contact {
+p.footer__contact {
   color: #b7b7b7; }
 
 .footer__container {
@@ -1169,19 +1170,12 @@ body {
   color: #b7b7b7;
   transition: all 0.3s; }
 
-.footer__link:hover {
-  background-color: #dd4135;
-  color: #ffffff; }
-
 .footer__link--cv {
   font-weight: bold;
   text-transform: uppercase; }
 
 .footer__link--web {
   color: #ffffff; }
-
-.footer__link--web:hover {
-  color: #dd4135; }
 
 /* Section projects */
 .section__projects {
@@ -1201,7 +1195,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  min-height: 1623px; }
+  min-height: 1564px; }
 
 .projects__particles {
   width: 100%;
@@ -1211,7 +1205,8 @@ body {
 .projects__content {
   width: 100%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  padding-top: 50px; }
 
 .projects__headingBox {
   margin: 50px 0; }
@@ -1383,7 +1378,8 @@ body {
 .contact__content {
   width: 100%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  padding-top: 50px; }
 
 .contact__footer {
   text-align: left;
@@ -1507,6 +1503,9 @@ body {
   margin: 0 5px;
   border: 2px solid #dd4135; }
 
+p.contact__description {
+  color: #b7b7b7; }
+
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
   /* Home */
@@ -1592,6 +1591,14 @@ body {
   .carousel__arrow:hover {
     color: #dd4135; }
 
+  /* Footer */
+  .footer__link:hover {
+    background-color: #dd4135;
+    color: #ffffff; }
+
+  .footer__link--web:hover {
+    color: #dd4135; }
+
   /* Section contact */
   .contact__button:hover, .contact__link:hover {
     background-color: #010101;
@@ -1611,6 +1618,14 @@ body {
   .contact__button:focus, .contact__link:focus {
     background-color: #010101;
     border: 2px solid #dd4135;
+    color: #dd4135; }
+
+  /* Footer */
+  .footer__link:focus {
+    background-color: #dd4135;
+    color: #ffffff; }
+
+  .footer__link--web:focus {
     color: #dd4135; }
 
   /* Home */
@@ -1859,7 +1874,7 @@ body {
             justify-content: center; }
 
   .projects__box {
-    min-height: 2882px; }
+    min-height: 2770px; }
 
   /* Section contact */
   .contact__container, .projects__container {
