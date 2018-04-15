@@ -99,10 +99,6 @@ body {
   background-color: #010101;
   transition: opacity 400ms ease-in-out, visibility 0s 400ms; }
 
-.show-preloader {
-  visibility: visible;
-  opacity: 1; }
-
 .circles-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,6 +149,20 @@ body {
   20% {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px); } }
+.preload__logoBorder {
+  width: 100px;
+  height: 100px; }
+
+.preload__LogoBorderInside {
+  position: relative;
+  width: 86px;
+  height: 86px; }
+
+.preload__svg {
+  position: absolute;
+  top: 15px;
+  left: 15px; }
+
 /* -> Navigation */
 /* -> Menu List */
 .nav__item {
@@ -1228,8 +1238,8 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-p.footer__contact {
-  color: #b7b7b7; }
+.footer__contact {
+  color: #b7b7b7 !important; }
 
 .footer__container {
   text-align: left; }
@@ -1578,8 +1588,8 @@ p.footer__contact {
   margin: 0 5px;
   border: 2px solid #dd4135; }
 
-p.contact__description {
-  color: #b7b7b7; }
+.contact__description {
+  color: #b7b7b7 !important; }
 
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
@@ -1644,7 +1654,6 @@ p.contact__description {
   /* -> Work */
   .workBox__works {
     width: 90%; } }
-/* Hover */
 @media (min-width: 992px) {
   /* Home */
   /* Navigation */
@@ -1660,6 +1669,11 @@ p.contact__description {
     background-color: #010101;
     border: 2px solid #dd4135;
     color: #dd4135; }
+
+  /* -- Preloader */
+  .show-preloader {
+    visibility: visible;
+    opacity: 1; }
 
   /* About */
   /* -> Skills */
