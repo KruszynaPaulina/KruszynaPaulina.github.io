@@ -1280,7 +1280,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  min-height: 1564px; }
+  min-height: 2453px; }
 
 .projects__particles {
   width: 100%;
@@ -1308,7 +1308,10 @@ body {
       flex-wrap: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .projects__cell {
   width: 50%;
@@ -1386,7 +1389,7 @@ body {
   background-repeat: no-repeat; }
 
 .projects__cell--rock {
-  background-image: url("../images/rock.jpg");
+  background-image: url("../images/rock2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -1399,6 +1402,24 @@ body {
 
 .projects__cell--tamagotchi {
   background-image: url("../images/tamagotchi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.projects__cell--crabs {
+  background-image: url("../images/crabs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.projects__cell--chuck {
+  background-image: url("../images/chuck.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.projects__cell--kanban {
+  background-image: url("../images/kanban.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -1427,7 +1448,7 @@ body {
   padding: 5px;
   background-color: #dd4135;
   color: #ffffff;
-  margin: 0 5px; }
+  margin: 5px 3px; }
 
 .projects__footer {
   padding-right: 0; }
@@ -1963,7 +1984,7 @@ body {
             justify-content: center; }
 
   .projects__box {
-    min-height: 2770px; }
+    min-height: 4133px; }
 
   /* Section contact */
   .contact__container, .projects__container {
@@ -2356,13 +2377,12 @@ body {
     height: 300px; }
 
   .projects__box {
-    min-height: 2340px; }
+    min-height: 3280px; }
 
   .projects__technologies, .projects__description {
     font-size: 14px; }
 
   .projects__technologies {
-    margin: 5px;
     padding: 2px; }
 
   .projects__title {
@@ -2377,9 +2397,6 @@ body {
 
   .projects__description {
     margin-bottom: 10px; }
-
-  .projects__box {
-    min-height: 2250px; }
 
   /* Section contact */
   .contact__columnCell {
@@ -2602,4 +2619,14 @@ body {
   /* About */
   /* -> Education */
   .education__year {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  .projects__title {
+    font-size: 16px; }
+
+  .projects__technologies {
+    font-size: 12px;
+    margin: 3px 1px; }
+
+  .projects__description {
+    font-size: 12px; } }

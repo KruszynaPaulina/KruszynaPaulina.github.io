@@ -1273,7 +1273,7 @@ body {
   width: 100%; 
   height: 100%;
   position: relative;
-  min-height: 1564px;
+  min-height: 2453px;
 }
 
 .projects__particles {
@@ -1305,6 +1305,7 @@ body {
 .projects__rowCell {
   flex-wrap: nowrap;
   display: flex;
+  justify-content: center;
 }
 
 .projects__cell {
@@ -1390,7 +1391,7 @@ body {
 }
 
 .projects__cell--rock {
-  background-image: url('../images/rock.jpg');
+  background-image: url('../images/rock2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1405,6 +1406,27 @@ body {
 
 .projects__cell--tamagotchi {
   background-image: url('../images/tamagotchi.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects__cell--crabs {
+  background-image: url('../images/crabs.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects__cell--chuck {
+  background-image: url('../images/chuck.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects__cell--kanban {
+  background-image: url('../images/kanban.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1438,7 +1460,7 @@ body {
   padding: 5px;
   background-color: $red;
   color: #ffffff;
-  margin: 0 5px;
+  margin: 5px 3px;
 }
 
 .projects__footer {
@@ -2080,7 +2102,7 @@ body {
   }
 
   .projects__box {
-    min-height: 2770px;
+    min-height: 4133px;
   }
 
   /* Section contact */
@@ -2583,7 +2605,7 @@ body {
   }
 
   .projects__box {
-    min-height: 2340px;
+    min-height: 3280px;
   }
 
   .projects__technologies, .projects__description {
@@ -2591,7 +2613,6 @@ body {
   }
 
   .projects__technologies {
-    margin: 5px;
     padding: 2px;
   }
 
@@ -2609,10 +2630,6 @@ body {
 
   .projects__description {
     margin-bottom: 10px;
-  }
-
-  .projects__box {
-    min-height: 2250px;
   }
 
   /* Section contact */
@@ -2911,6 +2928,19 @@ body {
 
   .education__year {
     font-size: 30px;
+  }
+
+  .projects__title {
+    font-size: 16px;
+  }
+
+  .projects__technologies {
+    font-size: 12px;
+    margin: 3px 1px;
+  }
+
+  .projects__description {
+    font-size: 12px;
   }
 
 }
