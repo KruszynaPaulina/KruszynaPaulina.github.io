@@ -150,18 +150,18 @@ body {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px); } }
 .preload__logoBorder {
-  width: 100px;
-  height: 100px; }
+  width: 114px;
+  height: 114px; }
 
 .preload__LogoBorderInside {
   position: relative;
-  width: 86px;
-  height: 86px; }
+  width: 100px;
+  height: 100px; }
 
 .preload__svg {
   position: absolute;
-  top: 15px;
-  left: 15px; }
+  top: 23px;
+  left: 23px; }
 
 /* -> Navigation */
 /* -> Menu List */
@@ -682,7 +682,7 @@ body {
 /* -> Skills */
 .about__skills {
   width: 100%;
-  min-height: 100%;
+  min-height: 763px;
   text-align: center;
   background-color: #0a0a0a;
   padding-right: 80px; }
@@ -1239,7 +1239,7 @@ body {
           align-items: center; }
 
 .footer__contact {
-  color: #b7b7b7 !important; }
+  color: #b7b7b7; }
 
 .footer__container {
   text-align: left; }
@@ -1260,7 +1260,7 @@ body {
   text-transform: uppercase; }
 
 .footer__link--web {
-  color: #ffffff; }
+  color: #dd4135; }
 
 /* Section projects */
 .section__projects {
@@ -1707,7 +1707,7 @@ body {
     color: #ffffff; }
 
   .footer__link--web:hover {
-    color: #dd4135; }
+    color: #ffffff; }
 
   /* Section contact */
   .contact__button:hover, .contact__link:hover {

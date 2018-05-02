@@ -105,20 +105,20 @@ body {
   }
 
   .preload__logoBorder {
-    width: 100px;
-    height: 100px;
+    width: 114px;
+    height: 114px;
   }
 
   .preload__LogoBorderInside {
     position: relative;
-    width: 86px;
-    height: 86px;
+    width: 100px;
+    height: 100px;
   }
 
   .preload__svg {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 23px;
+    left: 23px;
   }
 
   /* -> Navigation */
@@ -633,7 +633,7 @@ body {
 
 .about__skills {
   width: 100%;
-  min-height: 100%;
+  min-height: 763px;
   text-align: center;
   background-color: #0a0a0a;
   padding-right: 80px;
@@ -1224,7 +1224,7 @@ body {
  }
 
 .footer__contact {
-  color: #b7b7b7 !important;
+  color: #b7b7b7;
 }
 
 .footer__container {
@@ -1249,7 +1249,7 @@ body {
 }
 
 .footer__link--web {
- color: $white;
+ color: $red;
 }
 
   /* Section projects */
@@ -1761,7 +1761,7 @@ body {
   }
 
   .footer__link--web:hover {
-    color: $red;
+    color: $white;
   }
 
   /* Section contact */
