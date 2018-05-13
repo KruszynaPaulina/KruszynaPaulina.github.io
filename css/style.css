@@ -1424,6 +1424,18 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
 
+.projects__cell--wyszukiwarka {
+  background-image: url("../images/wyszukiwarka.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.projects__cell--lista {
+  background-image: url("../images/lista.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .projects__link {
   width: 40px;
   height: 40px;
