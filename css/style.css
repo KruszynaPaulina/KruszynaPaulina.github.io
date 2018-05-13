@@ -420,68 +420,6 @@ body {
   top: 45px;
   z-index: 2; }
 
-/* -> Navbar */
-.navbar {
-  position: fixed;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 50px;
-  height: 50vh;
-  z-index: 1; }
-
-.progress-bar {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -2px;
-  width: 2px;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #b7b7b7; }
-
-.progress-bar--incIntroduction {
-  background-color: #dd4135;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -2px;
-  height: 0;
-  max-height: 100%;
-  width: 2px;
-  border-radius: 5px; }
-
-.progress-bar--circle {
-  position: absolute;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #b7b7b7;
-  transition: all 0.1s; }
-
-.progress-bar--circle.active {
-  background-color: #dd4135; }
-
-.navbar ul {
-  margin-top: -6px;
-  list-style: none;
-  height: 100%; }
-
-.navbar ul li {
-  position: relative;
-  width: 14px;
-  height: 25%; }
-
-.navbar ul li a {
-  font-size: 1.2em;
-  color: white;
-  text-decoration: none;
-  transition: all 0.1s; }
-
-.active {
-  color: #E74C5B !important; }
-
 /* -> Icon Scroll */
 .about__iconScroll {
   position: fixed;
@@ -1280,7 +1218,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  min-height: 2453px; }
+  min-height: 2995px; }
 
 .projects__particles {
   width: 100%;
@@ -1316,7 +1254,7 @@ body {
 .projects__cell {
   width: 50%;
   height: 400px;
-  margin: 0 10px 20px 10px;
+  margin: 0 20px 40px 20px;
   position: relative;
   overflow: hidden; }
 
@@ -1327,12 +1265,6 @@ body {
   position: absolute;
   transition-timing-function: linear;
   transition: all 0.2s; }
-
-.projects__cell:hover .projects__cellBlende--left {
-  left: 0; }
-
-.projects__cell:hover .projects__cellBlende--right {
-  right: 0; }
 
 .projects__cellBlende--left {
   left: -50%; }
@@ -1356,9 +1288,6 @@ body {
   padding: 20px;
   z-index: 1;
   bottom: -100%; }
-
-.projects__cell:hover .projects__cellContent {
-  bottom: 0; }
 
 .projects__title {
   font-size: 20px;
@@ -1721,6 +1650,16 @@ body {
   .footer__link--web:hover {
     color: #ffffff; }
 
+  /* Section projects */
+  .projects__cell:hover .projects__cellBlende--left {
+    left: 0; }
+
+  .projects__cell:hover .projects__cellBlende--right {
+    right: 0; }
+
+  .projects__cell:hover .projects__cellContent {
+    bottom: 0; }
+
   /* Section contact */
   .contact__button:hover, .contact__link:hover {
     background-color: #010101;
@@ -1996,7 +1935,19 @@ body {
             justify-content: center; }
 
   .projects__box {
-    min-height: 4133px; }
+    min-height: 5192px; }
+
+  .projects__cell {
+    cursor: pointer; }
+
+  .hoverMobile .projects__cellBlende--left {
+    left: 0; }
+
+  .hoverMobile .projects__cellBlende--right {
+    right: 0; }
+
+  .hoverMobile .projects__cellContent {
+    bottom: 0; }
 
   /* Section contact */
   .contact__container, .projects__container {
@@ -2011,8 +1962,70 @@ body {
 
   .contact__box {
     min-height: 1350px; } }
+@media (min-width: 768px) {
+  /* -> Navbar */
+  .navbar {
+    position: fixed;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 50px;
+    height: 50vh;
+    z-index: 1; }
+
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    width: 2px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #b7b7b7; }
+
+  .progress-bar--incIntroduction {
+    background-color: #dd4135;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    height: 0;
+    max-height: 100%;
+    width: 2px;
+    border-radius: 5px; }
+
+  .progress-bar--circle {
+    position: absolute;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #b7b7b7;
+    transition: all 0.1s; }
+
+  .progress-bar--circle.active {
+    background-color: #dd4135; }
+
+  .navbar ul {
+    margin-top: -6px;
+    list-style: none;
+    height: 100%; }
+
+  .navbar ul li {
+    position: relative;
+    width: 14px;
+    height: 25%; }
+
+  .navbar ul li a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s; }
+
+  .active {
+    color: #E74C5B !important; } }
 /* Small devices (landscape phones, 576px and less than 768) */
-@media (max-width: 768px) {
+@media (max-width: 768.98px) {
   /* Home */
   /* -> Hero */
   .hero {
@@ -2389,7 +2402,7 @@ body {
     height: 300px; }
 
   .projects__box {
-    min-height: 3280px; }
+    min-height: 4135px; }
 
   .projects__technologies, .projects__description {
     font-size: 14px; }

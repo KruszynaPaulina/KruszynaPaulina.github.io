@@ -87,6 +87,16 @@ $(function() {
 
     projectLinkHome.hide();
 
+
+    var projectsCell = $('.projects__cell');
+
+    projectsCell.on('click', function(event) {
+
+        projectsCell.removeClass('hoverMobile')
+        $(this).addClass('hoverMobile');
+
+    });
+
 // About
 
     aboutLinkHome.on('click', function(event) {
